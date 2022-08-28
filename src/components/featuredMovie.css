@@ -1,0 +1,132 @@
+.featured{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.fade-vertical{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+.fade-orizontal{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111 10%, transparent 90%);
+    display: flex;
+    align-items: center;
+}
+
+.info-area{
+    margin-left: 3rem;
+    margin-bottom: 9rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-title{
+    color: #fff;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.info-span{
+    margin-top: 0.5rem;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 0.8rem;
+    font-size: 1.1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.info-span.green{
+    color: #46d369;
+}
+
+.featured-overwiew{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: rgb(187, 187, 187);
+    width: 40%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}   
+
+.buttons{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.link{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 3rem;
+    width: 12rem;
+}
+.button{
+    height: 2.6rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-weight: 550;
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+a{
+    text-decoration: none;
+}
+
+.button.watch{
+    padding-top: 0.5rem;
+    background-color: #fff;
+    color: #000;
+    width: 10rem;
+}
+.button.more{
+    width: 12rem;
+    height: 2.6rem;
+    background-color: rgba(31, 30, 30, 0.4);
+    color: #fff
+}
+.button.watch:hover{
+    opacity: 0.6;
+}
+
+.button.more:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.generes-span{
+    margin-top: 1rem;
+    width: 50%;
+}
+
+@media(max-width:760px){
+
+    .info-area{
+        margin-top: -4rem;
+    }
+
+    .featured-overwiew{
+        width: 90%;
+    }  
+    
+    .generes-span{
+        width: 90%;
+    }
+
+    .button.watch{
+        width: 8rem;
+    }
+    .button.more{
+        width: 11rem;
+    }
+}

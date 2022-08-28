@@ -1,0 +1,151 @@
+header{
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 4.5rem;
+    font-size: 0.9rem;
+    font-weight: 100;
+    transition: all ease 1.5s;
+}
+
+header.black{
+    background: linear-gradient(180deg, rgb(10, 10, 10) 19%, rgb(21, 21, 21) 100%);
+}
+
+.logo-netflix{
+    margin-left: 2rem;
+}
+
+.nav-principal{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap:1rem;
+}
+
+.logo-netflix{
+    height: 4rem;
+    width: 8rem;
+    cursor: pointer;
+}
+
+.opcoes-botoes{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    list-style: none;
+    gap: 1rem;
+    cursor: pointer;
+}
+.botao-opcao.destaque{
+    font-weight: bold;
+}
+.botao-opcao:hover{
+    opacity: 0.8;
+}
+.opcoes-botoes a{
+    color: #fff;
+}
+
+.lista-perfis{
+    width: 30%;
+    color: #fff;
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+.nav-secundaria{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:flex-end;
+    flex-direction: row;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+.icone-lupa{
+    height:1.3rem;
+    width: 1.3rem;
+    cursor: pointer;
+}
+
+.modo-infantil{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.icone-notificacao{
+        height:1.4rem;
+        width: 1.4rem;
+        cursor: pointer;
+}
+
+.logo-user1{
+    display: flex;
+    align-items: center;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 0.2rem;
+    margin-right: 5rem;
+    cursor: pointer;
+}
+
+.lista-perfis{
+    display: none;
+}
+
+.menu-dropdown li:hover{
+    cursor: pointer;
+}
+
+.menu-dropdown li:hover .lista-perfis{
+    display: block;
+    width: 6rem;
+    height: 9rem;
+    align-items: center;
+    text-align: center;
+    background-color: red;
+}
+
+ul{
+    list-style: none;
+}
+
+@media(max-width:760px){
+    header{
+        width:25rem;
+        height: 5rem;
+        font-size: 1.2rem;
+    }
+
+    .nav-principal{
+        display: none;
+    }
+
+    .nav-secundaria{
+       display: none;
+
+    }
+
+    .logo-netflix{
+        margin-left: 2rem;
+    }
+
+    .logo-user1{
+        margin-right: 3rem;
+    }
+}

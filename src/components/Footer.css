@@ -1,0 +1,13 @@
+.rodapé{
+    width: 100%;
+    color: #fff;
+    font-family:'Roboto', sans-serif;
+    height: 4rem;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Agradecimento{
+font-weight: 700;
+}

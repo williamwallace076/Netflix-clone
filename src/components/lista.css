@@ -1,0 +1,119 @@
+.lista-container{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    gap: 4rem;
+}
+
+.title-list{
+    font-size: 1.5rem;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+}
+
+.itens-container{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    gap: 1rem;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+.itens-container a{
+    transition: calc(0.4s);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 8rem;
+}
+.itens-container img {
+    border-radius: 0.3em;
+    width: 8rem;
+    height: 11rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.itens-container a:hover{
+    transform: scale(1.2);
+}
+
+.description{
+    display: none;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.itens-container a:hover .description{
+    background-color: #141414;
+    display: flex;
+    width: 8rem;
+    height: 5rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 0px 21px -4px #000000;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+
+    font-size: 0.7rem;
+}
+
+.setas{
+    display: none;
+}
+
+.lista-container:hover .setas{
+    display: flex;
+}
+
+.seta-left, .seta-right{
+    background: rgba(0, 0, 0, 0.6); 
+    width: 2.8rem;
+    height: 11rem;
+    padding-top: 3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: -3rem;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    z-index: 99;
+    transition: all ease calc(0.5s);
+}
+
+.seta-left{
+    border-top-right-radius: 0.3rem;
+    left: 0;
+}
+.seta-right{
+    border-top-left-radius: 0.3rem;
+    right: 0;
+}
+.seta-left:hover, .seta-right:hover{
+    cursor: pointer; 
+}
+
+.itens-container{
+    margin-left: 61rem;
+}
+
+@media (max-width: 760px){
+
+    .title-list{
+        font-size: 2rem;
+    }
+
+    .setas{
+        background-color: #000;
+       display: block;
+    }
+
+}
