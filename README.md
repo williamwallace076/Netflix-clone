@@ -1,3 +1,9 @@
+# Tecnologias utilizadas:
+
+- React e React Routes
+- CSS
+- Integração com a api "The Movie Data Base" para adquirir as informações 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
